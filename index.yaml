@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  robot-shop:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2024-03-08T13:24:38.520197103-08:00"
+    description: Sample Polyglot Microservice Application
+    digest: c09ff6038140a977a8b4d8e020d1d963dd6e47381b3fbf366ae5d33e7b776620
+    name: robot-shop
+    type: application
+    urls:
+    - https://konoha-23.github.io/konoha-roboshop/robot-shop-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-03-08T13:24:38.518873602-08:00"
