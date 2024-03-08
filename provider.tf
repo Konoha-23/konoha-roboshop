@@ -1,0 +1,27 @@
+terraform {
+  required_version = "~> 1.0"
+  required_providers {
+    aws = {
+        source = "hashicorp/aws"
+        version = "~> 4.0"
+    }
+    helm = {
+      source  = "hashicorp/helm"
+      version = ">= 2.4.1"
+    }
+  }
+}
+
+provider "aws" {
+    region = "us-west-2"
+}
+
+provider "helm" {
+  kubernetes {
+    config_path = "/home/terra/.kube/config"
+  }
+}
+
+provider "kubernetes" {
+    config_path = "/home/terra/.kube/config"
+  }

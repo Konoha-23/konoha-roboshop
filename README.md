@@ -1,2 +1,2 @@
 # konoha-roboshop
-roboshop custom helm chart deployment
+robotshop custom helm chart deployment
