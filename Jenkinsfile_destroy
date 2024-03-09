@@ -1,0 +1,14 @@
+pipeline{
+    agent { 
+        label 'kubernetes'
+  }
+    stages{
+        stage('Destroy Arsenal Web Server Today'){
+            steps{
+                sh "echo 'Deploy Tesla To Cluster'"
+                sh "terraform init"
+                sh "terraform destroy --auto-approve" 
+            }
+        }
+    }
+}
