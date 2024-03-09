@@ -46,9 +46,9 @@ pipeline{
               sh "terraform plan"   
             }
         }
-        stage('Create Wordpress App'){
+        stage('Create Robot-Shop E-commerce website'){
             steps{
-              sh "echo 'Create Wordpress'"
+              sh "echo 'Create Robot-Shop E-commerce website'"
               sh "terraform apply --auto-approve"   
             }
         }
